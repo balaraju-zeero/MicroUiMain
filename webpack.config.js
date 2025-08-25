@@ -10,10 +10,12 @@ module.exports = (_, argv) => {
   const CART_URL =
     process.env.CART_URL ||
     (isProd ? process.env.REACT_APP_PRODUCTION_URL_MICROU1 : process.env.REACT_APP_DEVELOPMENT_URL_MICROU1);
+ console.log("this is cart url", CART_URL );
  
   const WISHLIST_URL =
     process.env.WISHLIST_URL ||
     (isProd ? process.env.REACT_APP_PRODUCTION_URL_MICROU2 : process.env.REACT_APP_DEVELOPMENT_URL_MICROU2);
+  console.log("this is wishlist url", WISHLIST_URL );
  
   return {
     entry: "./src/index.js",
